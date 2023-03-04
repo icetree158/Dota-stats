@@ -1,0 +1,68 @@
+.filter-panel {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: 400;
+
+    .filter-art {
+        display: flex;
+        align-items: center;
+
+        img {
+            filter: grayscale(0.8);
+            cursor: pointer;
+            margin-left: 5px;
+            width: 35px;
+            height: 35px;
+        }
+
+        img:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    .filter-attact-type {
+        display: flex;
+        align-items: center;
+        .attack_type-svg {
+            margin-left: 10px;
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            transition: transform 0.2s ease-out;
+        }
+
+        .attack_type-svg:hover {
+            transform: rotate(20deg);
+        }
+
+    }
+    input{
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 4px;
+        color: white;
+        width: 20%;
+        font-size: 17px;
+        padding: 5px;
+    }
+    input:focus{
+       background-color: rgba(0, 0, 0, 0.3) ;
+    }
+   
+
+
+}
+
+
