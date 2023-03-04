@@ -1,0 +1,79 @@
+.heroCardContainer {
+    width: 225px;
+    height: 127px;
+    z-index: 1;
+    transition: transform 0.25s ease-in, filter 0.3s ease-out ;
+
+
+    .img-hero {
+        width: 225px;
+        height: 127px;
+        filter: saturate(70%)
+    }
+
+    .hover-info {
+        display: none;
+
+
+    }
+
+}
+
+.heroCardContainer:hover {
+    z-index: 2;
+    box-shadow: 1px 1px 10px 5px black;
+    transform: scale(1.3);
+    
+
+    .img-hero {
+        filter: saturate(100%)
+        
+    }
+
+    .hover-info {
+        position: relative;
+        display: block;
+        top: -25px;
+        display: flex;
+        align-items: center;
+        animation-name: out-text;
+        animation-duration: 0.4s;
+        box-shadow: 0px -23px 7px -7px rgba(0, 0, 0, 0.9) inset;
+        
+           
+
+
+        .name-hero {
+
+            margin-left: 3px;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 700;
+
+
+        }
+
+        .icon-attr {
+
+            height: 25px;
+            width: 25px;
+
+        }
+    }
+}
+
+@keyframes out-text {
+    0% {
+        top: -10px;
+        opacity: 0.1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+
+    100% {
+        top: -25px;
+        opacity: 1;
+    }
+}

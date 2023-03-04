@@ -1,0 +1,25 @@
+.hero-pagecontainer {
+    background-image: url('../../assets/artistic-blurry-colorful-wallpaper-background.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100%;
+
+    .heroGrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+        align-items: center;
+        justify-content: center;
+        width: 1200px;
+        gap: 10px;
+
+
+
+    }
+}
