@@ -10,5 +10,9 @@ export default function filterHeroes(filter: IFilterHero, heroinfo: IHero[], set
         setHeroes(heroinfo.filter(e => e.primary_attr === filter.mainAtrr))
     } else if (filter?.attack_type) {
         setHeroes(heroinfo.filter(e => e.attack_type === filter.attack_type))
+    } else{
+        setHeroes(heroinfo)
     }
+
+   
 }
